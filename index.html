@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/background 11.jpg');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 90px;
+      background-color: rgba(113, 98, 98, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #cec19f;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h4 {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      color: #fff;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      color: #3f3f3f;
+      background-color: #ffffff;
+      border: 2px solid #ffffff;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s, transform 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .button:hover {
+      background-color: #b5a6a6;
+      color: #ffffff;
+      border-color: #b5a6a6;
+      transform: translateY(-3px);
+    }
+    .gif-container {
+      margin-bottom: 20px;
+      border: 10px solid rgba(255, 255, 255, 0.5); 
+      border-radius: 15px; 
+      overflow: hidden; 
+    }
+    .gif-container img {
+      display: block;
+      width: 100%; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Autoplay audio section -->
+  <audio autoplay>
+    <source src="audios/keyboard typing.mp3" type="audio/mpeg">
+    <source src="audios/keyboard typing.mp3" type="audio.ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>Welcome to Maisarah's Page</h1>
+    <div class="gif-container">
+      <img src="images/keyboard.gif" alt="Animated GIF">
+    </div>
+  
+
+    <h4>Please click the button below for directory!</h4>
+    <ul>
+      <li><a href="biodata.html" class="button">Biodata</a></li>
+      <li><a href="contact.html" class="button">Contact</a></li>
+      <li><a href="gallery.html" class="button">Gallery</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+  </div>
+</body>
+</html>

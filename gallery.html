@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #d5c8c8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #837575;
+            color: #fff;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .gallery-table {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-spacing: 15px;
+            border-collapse: separate;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            object-fit: cover; 
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-size: 0.8rem;
+            border-radius: 0 0 10px 10px; 
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px); 
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+
+        .gallery-buttons {
+            margin-top: 20px;
+        }
+
+        .gallery-button {
+            padding: 8px 16px; 
+            background-color: #6b6161;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            font-size: 0.9rem; 
+        }
+
+        .gallery-button:hover {
+            background-color: #4c4545;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maisarah's Gallery</h1>
+        <p>Catch a glimpse of Maisarah's life</p>
+    </header>
+
+    <div class="gallery-header">
+        <h2 class="gallery-title">Explore the Gallery</h2>
+    </div>
+
+    <table class="gallery-table">
+        <tr>
+            <td class="gallery-item">
+                <img src="images/aquaria.jpg" alt="Image 1">
+                <div class="caption">Went to Aquaria KLCC with friends</div>
+            </td>
+            <td class="gallery-item">
+                <img src="images/jujutsu kaisen.jpg" alt="Image 2">
+                <div class="caption">Photobooth picture at Jujutsu Kaisen Exhibition</div>
+            </td>
+            <td class="gallery-item">
+                <img src="images/bukit bintang.jpg" alt="Image 3">
+                <div class="caption">Hanging out at Bukit Bintang</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gallery-item">
+                <img src="images/pasar seni.jpg" alt="Image 4">
+                <div class="caption">Shopping at Pasar Seni</div>
+            </td>
+            <td class="gallery-item">
+                <img src="images/family.jpg" alt="Image 5">
+                <div class="caption">Raya with my parents</div>
+            </td>
+            <td class="gallery-item">
+                <img src="images/birthday.jpg" alt="Image 6">
+                <div class="caption">Attending my friend's birthday</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="gallery-item">
+                <img src="images/slytherin.jpg" alt="Image 7">
+                <div class="caption">At Platform 9 1/2 Cafe, Ipoh</div>
+            </td>
+            <td class="gallery-item">
+                <img src="images/cosplay.jpg" alt="Image 8">
+                <div class="caption">Cosplaying with my friend</div>
+            </td>
+            <td class="gallery-item">
+                <img src="images/nof8.jpg" alt="Image 9">
+                <div class="caption">At Night of Frights 8, Sunway Lagoon</div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="gallery-buttons">
+        <a class="gallery-button" href="index.html">Index</a>
+        <a class="gallery-button" href="biodata.html">Biodata</a>
+        <a class="gallery-button" href="contact.html">Contact</a>
+    </div>
+</body>
+</html>
